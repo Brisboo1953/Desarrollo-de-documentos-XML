@@ -1,0 +1,15 @@
+<!DOCTYPE LigaBBVAMX [
+        <!ELEMENT LigaBBVAMX (Fecha|Partido)*>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT Partido (Equipos|MarcadorF|Goles)*>
+        <!ELEMENT Equipos (EquipoLocal|EquipoVisitante)*>
+        <!ELEMENT EquipoLocal (#PCDATA)>
+        <!ELEMENT EquipoVisitante (#PCDATA)>
+        <!ELEMENT MarcadorF (#PCDATA)>
+        <!ELEMENT Goles (GolesLocal|GolesVisitante)*>
+        <!ELEMENT GolesLocal (Gol)*>
+        <!ELEMENT Gol (Jugador|Min)*>
+        <!ELEMENT Jugador (#PCDATA)>
+        <!ELEMENT Min (#PCDATA)>
+        <!ELEMENT GolesVisitante (Gol)*>
+        ]>
