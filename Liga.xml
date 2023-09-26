@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LigaBBVAMX [
+        <!ELEMENT LigaBBVAMX (Fecha|Partido)*>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT Partido (Equipos|MarcadorF|Goles)*>
+        <!ELEMENT Equipos (EquipoLocal|EquipoVisitante)*>
+        <!ELEMENT EquipoLocal (#PCDATA)>
+        <!ELEMENT EquipoVisitante (#PCDATA)>
+        <!ELEMENT MarcadorF (#PCDATA)>
+        <!ELEMENT Goles (GolesLocal|GolesVisitante)*>
+        <!ELEMENT GolesLocal (Gol)*>
+        <!ELEMENT Gol (Jugador|Min)*>
+        <!ELEMENT Jugador (#PCDATA)>
+        <!ELEMENT Min (#PCDATA)>
+        <!ELEMENT GolesVisitante (Gol)*>
+        ]>
+<LigaBBVAMX>
+    <Fecha>20 de Sepiembre del 2023</Fecha>
+    <Partido>
+        <Equipos>
+            <EquipoLocal>Cruz Azul (Ciudad de Mexico)</EquipoLocal>
+            <EquipoVisitante>Santos(Torreon)</EquipoVisitante>
+        </Equipos>
+        <MarcadorF>2 - 2</MarcadorF>
+        <Goles>
+            <GolesLocal>
+                <Gol>
+                    <Jugador>Diber Cambindo </Jugador>
+                    <Min>10</Min>
+                </Gol>
+
+                <Gol>
+                    <Jugador>Uriel Antuna</Jugador>
+                    <Min>45</Min>
+                </Gol>
+            </GolesLocal>
+            <GolesVisitante>
+                <Gol>
+                    <Jugador>Harold Preciado</Jugador>
+                    <Min>2</Min>
+                </Gol>
+
+                <Gol>
+                    <Jugador>Harold Preciado </Jugador>
+                    <Min>64</Min>
+                </Gol>
+            </GolesVisitante>
+        </Goles>
+    </Partido>
+</LigaBBVAMX>
